@@ -12,8 +12,10 @@
   justify-content: inherit;
   align-items: inherit;
   max-width: var(--max-width);
-  width: 100%;
+  width:720px;
+  animation: fadeIn 1.5s ease-in-out;
 }
+
 
 .descriptionContainer {
   display: inherit;
@@ -22,6 +24,7 @@
   align-items: center;
   max-width: var(--max-width);
   width: 100%;
+  margin-top: -40px;
 }
 
 .descriptionContainer h1, 
@@ -33,7 +36,24 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: white;
 }
+
+.descriptionContainer h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: white;
+  /* add animation with delay */
+  animation: fadeInH2 3s ease-in-out;
+  text-align: center;
+}
+
+.descriptionContainer h3{
+  animation: fadeInH2 6s ease-in-out;
+  text-align: center;
+}
+
 
 
 .descriptionContainer p {
@@ -42,4 +62,67 @@
   margin-bottom: 1rem;
 }
 
+.email a {
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
 
+.email p{
+  animation: fadeInH2 8s ease-in-out;
+}
+
+/* Create keyframes for a from opacity:0 zooming in */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInH2 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@media (max-width: 900px) {
+  .main {
+    padding: 2rem;
+  }
+  .logoAnimationContainer {
+    width: 100%;
+  }
+  .descriptionContainer {
+    width: 100%;
+    margin: 0;
+  }
+  .descriptionContainer h1 {
+    font-size: 1.5rem;
+  }
+  .descriptionContainer h2 {
+    font-size: 1.25rem;
+  }
+  .descriptionContainer p {
+    font-size: 1rem;
+  }
+  .email a {
+    font-size: 0.75rem;
+  }
+}
