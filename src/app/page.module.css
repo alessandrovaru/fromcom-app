@@ -45,12 +45,10 @@
   margin-bottom: 1rem;
   color: white;
   /* add animation with delay */
-  animation: fadeInH2 3s ease-in-out;
   text-align: center;
 }
 
 .descriptionContainer h3{
-  animation: fadeInH2 6s ease-in-out;
   text-align: center;
 }
 
@@ -76,7 +74,6 @@
 }
 
 .email p{
-  animation: fadeInH2 8s ease-in-out;
 }
 
 /* Create keyframes for a from opacity:0 zooming in */
