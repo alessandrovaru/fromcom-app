@@ -1,6 +1,9 @@
 import { Inter, Montserrat } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react';
+
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
+
 
 
 const montserrat = Montserrat({ subsets: ['latin'] })
