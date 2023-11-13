@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.logoAnimationContainer}>
-       <Image className='img-fluid' src='/logos/fdo1.gif' width={1280} height={720}/>
+       <Image className='img-fluid' src='/logos/fdo1.gif' width={1280} height={720} alt='The F* Rom Com Pictures'/>
       </div>
       <div className={styles.revealContainer}>
         <div className={styles.descriptionContainer}>
